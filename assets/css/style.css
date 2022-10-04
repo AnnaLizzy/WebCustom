@@ -58,9 +58,45 @@
   26. Responsive Part
 
 --------------------------------------------------------------------------*/
-
-
-
+.row{
+  display: flex;
+  padding-top: 5px ;  
+}
+.left{
+  flex: 25%;
+  padding: 5px 0;
+  padding-left: 40px;
+  background-color:#F7F7F7;
+  text-transform: uppercase;
+}
+.left h2{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.right{
+  flex: 85%;
+  padding: 15px;
+}
+#mySearch{ 
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border: solid 1px #ddd;
+}
+#myMenu{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;  
+}
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+#myMenu li a :hover{
+  background-color: #eee;
+}
 /***********************************************************************************************/
 /* =Common Styles */
 /***********************************************************************************************/
