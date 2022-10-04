@@ -7,12 +7,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact</title>
+    <title>Website Security</title>
 
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
     <!-- Bootstrap CSS Style -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
 
     <!-- Template CSS Style -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -59,13 +60,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/logosystem.png" width="40px"
+                    <a class="navbar-brand" href="#"><img src="assets/images/logosystem.png" width="40px"
                             alt="photosystem"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navigation-nav">
                     <ul class="nav navbar-nav navbar-left">
-                        <li class="active"><a class="section-scroll" href="index.html">Trang chủ</a></li>
+                        <li class="active"><a class="section-scroll" href="#wrapper">Trang chủ</a></li>
                         <li class="dropdown">
                             <a class=" dropdown-toggle" role="button" data-toggle="dropdown" href="#">Thông tin</a>
                             <ul class="dropdown-menu">
@@ -80,9 +81,8 @@
                             </ul>
                         </li>
                         <li><a href="#features-section">Trợ giúp</a></li>
-                        <li><a href="#team-section">Team</a></li>
-                        <li><a href="#screenshots-section">Quản lý hàng ra vào cổng</a></li>
-                        <li><a href="#subscribe-section">Liên hệ</a></li>
+                        <li><a href="#screenshots-section">Quản lý hàng ra vào </a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#contact-section">Đăng nhập</a></li>
@@ -103,98 +103,118 @@
         </nav>
 
     </header>
-    <!-- End Navbar --> 
-        <h3 style="text-align:center ; padding-top: 50px;">Trung tâm làm/đổi các loại thẻ & Phương thức liên hệ</h3>
-        <div class="offer-boxes">
+    <!-- End Navbar -->
 
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="offer-post text-center animated out" data-animation="fadeInLeft" data-delay="0">
-                  <div class="offer-icon">
-                  </div>
-                  <h4><strong>Nhà xưởng Quế Võ (535+Ext.)</strong> </h4>
-                  <p>Cổng A1: 27811<br>
-                    Cổng A2: 27822<br>
-                    Cổng A3: 27833<br>
-                    QVX3: 26228/26227<br>
-                    QV2: 19070/19069<br>
-                    Thiên Kim: 26614<br>
-                    Kho QV3: 25069</p>
-                </div> <!-- End offer-post -->
-              </div> <!-- End col-sm-4 -->
+    <div class="row">
+        <div class="left">
+          <h2>Menu</h2>
+          <input class="" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+          <ul  id="myMenu">
+            <li><a href="#" >Công việc của tôi</a></li>
+            <li class="dropdown"><a class=" dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+                Quản lý phương tiện
+            </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Thẻ thông hành xe</a></li>
+                    <li><a href="#">Gia hạn thẻ</a></li>
+                    <li><a href="#" title="Đơn xin lái xe vào nhà xưởng của chủ quản cấp cao hoặc khách VIP">
+                        Thẻ xe VIP</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Quản lý </a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Node.js</a></li>            
+          </ul>
+        </div>
+        
+  <div class="right">
+    <h2>Page Content</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+  </div>
+</div>
 
-              <div class="col-sm-4">
-                <div class="offer-post text-center animated out" data-animation="fadeInUp" data-delay="0">
-                  <div class="offer-icon">                    
-                  </div>
-                  <h4><strong>Nhà xưởng Đồng Vàng(535+Ext.)</strong> </h4>
-                  <p>Làm thẻ: 22372<br>
-                    Cổng A1: 22600/22634<br>
-                    Cổng A2 : 22696/22695<br>
-                    Cổng A3: 22412/22419</p>
-                </div> <!-- End offer-post -->
-              </div> <!-- End col-sm-4 -->
+    <!-- Subscribe-section
+    ================================================== -->
+    <!-- <section>
+        <div id="subscribe-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                        <div class="newsletter-title text-center">
+                            <h4>Stay informed with our newsletter</h4>
+                        </div>  end newsletter-title 
+                        <form class="form-inline subscription-form mailchimp" id="subscribeform">
+                             Subscription messages 
+                            <h5 class="subscription-success"></h5>
+                            <h5 class="subscription-error"></h5>
+                            Email input 
+                            <div class="form-group newsletter-field">
+                                <input type="email" name="EMAIL" class="form-control" id="subscriber-email"
+                                    placeholder="jane.doe@example.com">
+                            </div>
+                             Subscribe button 
+                            <button type="submit" id="subscribe-button" class="btn btn-sm btn-dark">Subscribe</button>
+                        </form>
+                    </div> end col-sm-6 
+                </div>  end row
+            </div>  end container
+        </div>  end subscribe-section
+    </section> -->
+    <!-- End subscribe section -->
 
-              <div class="col-sm-4">
-                <div class="offer-post text-center animated out" data-animation="fadeInRight" data-delay="0">
-                  <div class="offer-icon">
-                  </div>
-                  <h4><strong>Nhà xưởng Quang Châu (535+Ext.)</strong> </h4>
-                  <p>Làm Thẻ: 30808<br>
-                    Cổng P1: 30311<br>
-                    Cổng P2: 30312<br>
-                    Cổng P3: 30237<br>
-                    Cổng Khu S: 30231<br>
-                    Cổng F2: 30806<br>
-                    Cổng F3: 30242<br>
-                    Cổng F1: 31973<br>
-                    Cổng F4: 31974<br>
-                    Cổng M1: 30804<br>
-                    Cổng M2: 31976<br>
-                    Cổng M3: 30803</p>
-                </div> <!-- End offer-post -->
-              </div> <!-- End col-sm-4 -->
+    
 
-            </div> <!-- End row -->
 
-          </div> <!-- End offer-boxes -->
-           
+
+    <!-- Footer
+    ================================================== -->
     <footer>
         <div id="footer-section" class="text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <ul class="footer-social-links">
-                  <li><a href="#">Liên hệ</a></li>
-                  <li><a href="#">Trợ giúp</a></li>
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Zalo</a></li>
-                </ul>
-                <br>
-                <br>
-                <P>
-                  Nhân viên quản lý: Vũ Văn Hinh(EXT:535+27299/535+20770)<br>
-                  Email: system-attwvn@mail.foxconn.com)<br>
-                  Nếu điện thoại không thể kết nối được,
-                  Bạn hãy gửi những bất thường đến hộp thư của Ban an toàn trung ương,
-                  chúng tôi sẽ xử lý và phản hồi trong thời gian ngắn nhất.<br>Xin cảm ơn!
-  
-                </P>
-                <p class="copyright">
-                  &copy; 2022 - Created With <img src="/assets/images/heart-solid.svg" alt="heart" style="width:15px;padding-bottom: 4px;"> By
-                  <strong>ATTW</strong></a>
-                </p>
-              </div> <!-- End col-sm-8 -->
-            </div> <!-- End row -->
-          </div> <!-- End container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <ul class="footer-social-links">
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Trợ giúp</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Zalo</a></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <P>
+                            Nhân viên quản lý: Vũ Văn Hinh(EXT:535+27299/535+20770)<br>
+                            Email: system-attwvn@mail.foxconn.com)<br>
+                            Nếu điện thoại không thể kết nối được,
+                            Bạn hãy gửi những bất thường đến hộp thư của Ban an toàn trung ương,
+                            chúng tôi sẽ xử lý và phản hồi trong thời gian ngắn nhất.<br> Xin cảm ơn!
+                        </P>
+                        <p class="copyright">
+                            &copy; 2022 - Created With <img src="/assets/images/heart-solid.svg" alt="heart"
+                                style="width:15px;padding-bottom: 4px;"> By
+                            <strong>ATTW</strong></a>
+                        </p>
+                    </div> <!-- End col-sm-8 -->
+                </div> <!-- End row -->
+            </div> <!-- End container -->
         </div> <!-- End footer-section  -->
-      </footer>
-      <!-- End footer -->
-  
+    </footer>
+    <!-- End footer -->
+
     </div> <!-- End wrapper -->
-  
-    
-  
+
+    <!-- Back-to-top
+  ================================================== -->
+    <div class="back-to-top">
+        <i class="fa fa-angle-up fa-3x"></i>
+    </div> <!-- end back-to-top -->
+
     <!-- JS libraries and scripts -->
     <script src="assets/js/jquery-1.11.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -218,6 +238,7 @@
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script src="assets/js/jquery.gmaps.js"></script>
     <script src="assets/js/main.js"></script>
-  
-  </body>
+
+</body>
+
 </html>
